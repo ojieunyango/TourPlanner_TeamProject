@@ -1,27 +1,66 @@
-# React + TypeScript + Vite
+# 어디로든 문 - 여행 플래너 ✈️
+> 팀 프로젝트 - AI 기반 스마트 여행 계획 플랫폼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 프로젝트 개요
+-   **프로젝트명**: 어디로든 문
+-   **개발 인원**: 4명 (팀 프로젝트)
+-   **프로젝트 타입**: 웹 애플리케이션 (풀스택)
 
-Currently, two official plugins are available:
+## 🎯 개발 배경
+여행 일정을 쉽고 간편하고 만들며, 여행 메이트와 쉽게 공유 할수있도록 만들었어요. 
+날씨, 교통, 예산 등을 고려한 최적화된 여행 일정을 자동으로 생성하고, 커뮤니티를 통해 경험을 공유할 수 있는 올인원 여행 플래너를 목표로 개발했습니다. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ 주요 기능
+-   🔐 `JWT 기반 인증 시스템`
+-   🗺️ `Google Maps 연동 여행지 검색`
+-   📅 `드래그 앤 드롭 일정 관리`
+-   🌤️ `실시간 날씨 정보 제공`
+-   🚗 `경로 및 교통 정보 안내`
+-   💰 `예산 계획 및 관리`
+-   💬 `여행 후기 커뮤니티`
+-   📸 `이미지 업로드 및 관리`
+-   📄 `PDF 일정표 생성`
+-   🔔 `실시간 알림 시스템`
 
-## Expanding the ESLint configuration
+## 🛠️ 기술 스택
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Frontend
+-   **React** (18.2.0)
+-   **TypeScript** (5.8.3)
+-   **Vite** (4.4.5)
+-   **Material-UI** (7.1.2)
+-   **React Router DOM** (7.6.2)
+-   **Recoil & Zustand** (상태 관리)
+-   **Axios** (API 통신)
+-   **React Beautiful DnD** (드래그 앤 드롭)
+-   **Google Maps API** (지도 서비스)
 
-- Configure the top-level `parserOptions` property like this:
+### Backend
+-   **Java 17**
+-   **Spring Boot** (3.5.0)
+-   **Spring Security**
+-   **Spring Data JPA**
+-   **JWT** (인증)
+-   **Lombok**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Database
+-   **MariaDB**
+-   **Flyway** (DB 마이그레이션)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 개발 도구 및 배포
+-   **Git & GitHub**
+-   **IntelliJ IDEA**
+-   **VS Code**
+-   **Gradle**
+-   **ESLint**
+
+## 🌟 Git 워크플로우
+
+#### 브랜치 전략
+-   **`main`**: 메인 배포 브랜치
+-   **`dev`**: 개발 중인 기능 통합 브랜치
+
+![여행 플래너 동작 GIF](https://github.com/ojieunyango/TourPlanner_TeamProject/blob/main/tour-frontend/images/demo.gif?raw=true)
+
+
+
