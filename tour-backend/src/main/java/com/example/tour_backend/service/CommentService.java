@@ -101,20 +101,6 @@ public class CommentService {
         return dto;
     }
 
-//        // 게시글 ID로 모든 댓글 조회 후 Comment -> CommentDto 변환
-//        return commentRepository.findByThread_ThreadId(threadId)
-//            .stream()
-//                .map(comment -> {
-//        CommentDto dto = new CommentDto();
-//        dto.setCommentId(comment.getCommentId());
-//        dto.setThreadId(comment.getThread().getThreadId());
-//        dto.setAuthor(comment.getAuthor());
-//        dto.setComment(comment.getComment());
-//        dto.setCreateDate(comment.getCreateDate());
-//        dto.setModifiedDate(comment.getModifiedDate());
-//        return dto;
-//    })
-//            .collect(Collectors.toList());
 
 
     // ✅ 댓글 수정 - 권한 확인 로직 복원

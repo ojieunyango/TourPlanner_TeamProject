@@ -6,6 +6,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import com.example.tour_backend.domain.thread.Thread;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -30,6 +33,7 @@ public class Notification {
     // 관련 댓글
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "commentId", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Comment comment;
 
     @Column(nullable = false, length = 225)

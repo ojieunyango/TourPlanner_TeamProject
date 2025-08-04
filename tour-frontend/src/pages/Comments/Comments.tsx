@@ -112,18 +112,20 @@ const Comments: React.FC<CommentsProps> = ({ threadId }) => {
     }
   };
 
+
   const handleDelete = async (commentId: number) => {
     const confirmed = window.confirm('이 댓글을 삭제하시겠습니까?');
-    if (!confirmed) return;
-
+    if (!confirmed || !user) return; // 로그인 확인 추가
+  
     try {
-      await deleteComment(commentId);
+      await deleteComment(commentId, user.userId); // ✅ userId 전달
       await fetchComments();
     } catch (error) {
       console.error('댓글 삭제 실패:', error);
       alert('댓글 삭제에 실패했습니다.');
     }
   };
+  
 
   const renderComments = (commentList: Comment[], isChild = false) => {
     return commentList.map((comment) => (
@@ -197,7 +199,7 @@ const Comments: React.FC<CommentsProps> = ({ threadId }) => {
                   답글
                 </Button>
               )}
-              {user?.username === comment.author && (
+              {user?.userId === comment.userId && (
                 <>
                   <Button
                     size="small"

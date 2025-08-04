@@ -20,6 +20,12 @@ export async function updateComment(commentId: number, data: CommentRequest): Pr
 }
 
 // ✅ 댓글 삭제 - userId 파라미터 추가
+// export async function deleteComment(commentId: number, userId: number): Promise<void> {
+//   await api.delete(`/comments/${commentId}?userId=${userId}`);
+// }
+
 export async function deleteComment(commentId: number, userId: number): Promise<void> {
-  await api.delete(`/comments/${commentId}?userId=${userId}`);
+  await api.delete(`/comments/${commentId}`, {
+    params: { userId }
+  });
 }
