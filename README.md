@@ -60,7 +60,10 @@
 -   **`main`**: 메인 배포 브랜치
 -   **`dev`**: 개발 중인 기능 통합 브랜치
 
-![여행 플래너 동작 GIF](https://github.com/ojieunyango/TourPlanner_TeamProject/blob/main/tour-frontend/images/demo.gif?raw=true)
+![여행 플래너 동작 GIF](https://github.com/ojieunyango/TourPlanner_TeamProject/raw/main/images/demo.gif)
+
+
+
 
 
 
