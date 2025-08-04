@@ -61,7 +61,6 @@
 -   **`dev`**: 개발 중인 기능 통합 브랜치
 
 
-![여행 플래너 동작 GIF](./images/tourplanner.gif)
 
 ![여행 플래너 동작 GIF](https://github.com/ojieunyango/TourPlanner_TeamProject/raw/main/images/tourplanner.gif)
 
